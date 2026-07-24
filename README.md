@@ -195,4 +195,3 @@ OpenROAD Physical Design
 - `image_rom` is synthesized as combinational logic (no SRAM blocks) to remain fully compatible with Yosys open-source synthesis.
 - `synth_sky130.ys` reads the PDK Liberty path from the `PDK_ROOT` environment variable for portability. If not set, it falls back to the local ciel-installed path.
 - Physical design was run on a consumer laptop (8 CPU threads, integrated graphics). Routing ~100k standard cells with TritonRoute is compute-intensive and may take several hours.
-# Image-Processing-Hardware

@@ -1,0 +1,64 @@
+
+# Read RTL
+
+read_verilog rtl/image_rom.v
+read_verilog rtl/pixel_stream.v
+read_verilog rtl/line_buffer.v
+read_verilog rtl/window_3x3.v
+read_verilog rtl/sobel_core.v
+read_verilog rtl/gradient_mag.v
+read_verilog rtl/threshold.v
+read_verilog rtl/image_pipeline.v
+read_verilog rtl/top.v
+
+# Hierarchy
+
+hierarchy -check -top top
+
+check
+
+# Process conversion
+
+proc
+opt_expr
+opt_clean
+
+# FSM optimization
+
+fsm
+fsm_opt
+
+# Memory inference
+
+memory_dff
+memory_collect
+memory_map
+
+# General optimization
+
+opt
+opt_clean
+opt_merge
+opt_reduce
+
+# Technology mapping
+
+techmap
+opt
+
+# Logic optimization
+
+abc
+clean
+
+# Reports
+
+tee -o reports/yosys/stat.txt stat
+tee -o reports/yosys/hierarchy.txt hierarchy
+tee -o reports/yosys/check.txt check
+
+# Outputs
+
+write_verilog netlist/top_synth.v
+write_json netlist/top.json
+write_blif netlist/top.blif
