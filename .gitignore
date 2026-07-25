@@ -19,6 +19,7 @@ waves.shm/
 # Verification memory outputs
 edge_output.mem
 gradient_output.mem
+*.mem
 
 # Python environment
 __pycache__/
@@ -32,10 +33,13 @@ logs/
 openroad/*.log
 openroad/logs/*.log
 openroad/logs/
+openroad/results/*.def
 openroad/results/*.guide
 openroad/results/
 openroad/reports/
 netlist/
+netlist/*.v
+netlist/*.json
 physical/
 reports/
 python_ref/image.mem
