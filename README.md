@@ -97,6 +97,12 @@ hardware-img/
 | Mismatches vs Python Reference | 0 |
 | Verilator Lint | 0 errors, 0 warnings |
 
+### Output Comparison
+| Input Image | Python Golden Model | Hardware RTL Output |
+|---|---|---|
+| ![Input](image.png) | ![Python](python_ref/python_gradient.png) | ![RTL](python_ref/rtl_gradient.png) |
+
+
 ### Synthesis (Yosys + Sky130 HD)
 
 | Metric | Value |
