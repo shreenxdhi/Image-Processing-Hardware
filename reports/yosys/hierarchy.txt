@@ -1,0 +1,26 @@
+
+30. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `top'. Setting top module to top.
+
+30.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$932e476fa9631b3e355c4f9b8005a918a1310609\image_pipeline
+Used module:         \gradient_mag
+Used module:         \sobel_core
+Used module:         $paramod\threshold\THRESHOLD=s32'00000000000000000000000001100100
+Used module:         $paramod\window_3x3\IMG_WIDTH=s32'00000000000000000000001010000010
+Used module:             $paramod\line_buffer\IMG_WIDTH=s32'00000000000000000000001010000010
+Used module:     \image_rom
+Used module:     $paramod$8974e4b3938d5d8a1532a7196da418175c0d54cf\pixel_stream
+
+30.2. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod$932e476fa9631b3e355c4f9b8005a918a1310609\image_pipeline
+Used module:         \gradient_mag
+Used module:         \sobel_core
+Used module:         $paramod\threshold\THRESHOLD=s32'00000000000000000000000001100100
+Used module:         $paramod\window_3x3\IMG_WIDTH=s32'00000000000000000000001010000010
+Used module:             $paramod\line_buffer\IMG_WIDTH=s32'00000000000000000000001010000010
+Used module:     \image_rom
+Used module:     $paramod$8974e4b3938d5d8a1532a7196da418175c0d54cf\pixel_stream
+Removed 0 unused modules.

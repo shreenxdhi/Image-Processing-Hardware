@@ -1,46 +1,34 @@
-#Simulation outputs and waveforms
 *.out
 *.vvp
 *.vcd
 *.fst
 *.ghw
+tb/sim_check
 work/
 xcelium.d/
 xrun.*
 waves.shm/
-
-# Backups and temporary files
-*~
-*.bak
-*.def.*
-*.log.*
-.DS_Store
-
-# Verification memory outputs
 edge_output.mem
 gradient_output.mem
-*.mem
-
-# Python environment
+*~
+*.bak
+.DS_Store
+._.DS_Store
+._*
 __pycache__/
 *.pyc
 venv/
 .venv/
-
-# EDA tool logs and guides
-scripts/synth_sky130l.ys
+physical/runs/
 logs/
-openroad/*.log
-openroad/logs/*.log
-openroad/logs/
-openroad/results/*.def
-openroad/results/*.guide
-openroad/results/
-openroad/reports/
-netlist/
-netlist/*.v
+reports/yosys.log
+netlist/*.blif
 netlist/*.json
-physical/
-reports/
-python_ref/image.mem
-*.cmd*
+openroad/logs/
+openroad/results/01_floorplan.def
+openroad/results/02_place.def
+openroad/results/03_cts.def
+openroad/results/04_route.def
+openroad/results/04_route.guide
+!openroad/results/top_sky130.def
+!openroad/results/top_sky130.gds

@@ -42,8 +42,6 @@ module tb_pixel_stream;
     );
 
     initial begin
-        $dumpfile("pixel_stream.vcd");
-        $dumpvars(0, tb_pixel_stream);
     end
 
     initial begin

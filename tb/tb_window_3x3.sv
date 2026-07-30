@@ -4,7 +4,6 @@ module tb_window_3x3;
 
     localparam int IMG_WIDTH  = 8;
 
-
     logic clk;
     logic rst;
     logic        pixel_valid;
@@ -35,8 +34,6 @@ module tb_window_3x3;
     end
 
     initial begin
-        $dumpfile("tb_window_3x3.vcd");
-        $dumpvars(0, tb_window_3x3);
     end
 
     initial begin

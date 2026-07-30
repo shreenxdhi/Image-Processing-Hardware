@@ -1,0 +1,16 @@
+{
+  "PDK": "sky130A",
+  "DESIGN_NAME": "image_pipeline",
+  "VERILOG_FILES": [
+    "dir::../rtl/image_pipeline.v",
+    "dir::../rtl/window_3x3.v",
+    "dir::../rtl/line_buffer.v",
+    "dir::../rtl/sobel_core.v",
+    "dir::../rtl/gradient_mag.v",
+    "dir::../rtl/threshold.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+  "PNR_SDC_FILE": "dir::../constraints/top.sdc",
+  "SIGNOFF_SDC_FILE": "dir::../constraints/top.sdc"
+}

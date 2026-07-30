@@ -1,8 +1,5 @@
-# OpenROAD Floorplanning Script
-
 source "scripts/setup.tcl"
 
-# Read libraries and netlist
 puts "\[INFO\] Reading Tech and Cell LEFs..."
 read_lef $TECH_LEF
 read_lef $CELL_LEF
@@ -14,36 +11,30 @@ puts "\[INFO\] Reading Verilog Netlist..."
 read_verilog $NETLIST
 link_design $DESIGN_NAME
 
-# Design sanity check
-puts "\[INFO\] Performing pre-floorplan design sanity check..."
+puts "\[INFO\] Performing setup check..."
 check_setup -verbose
 
-puts "\[INFO\] Reading SDC Constraints..."
+puts "\[INFO\] Reading SDC constraints..."
 read_sdc $SDC_FILE
 
-# Floorplan initialization (40% utilization, square core)
 puts "\[INFO\] Initializing Floorplan..."
-initialize_floorplan -utilization 40 \
+initialize_floorplan -utilization 30 \
                      -aspect_ratio 1.0 \
-                     -core_space 10.0 \
+                     -core_space 12.0 \
                      -site unithd
 
-puts "\[INFO\] Generating routing tracks..."
+puts "\[INFO\] Generating tracks..."
 make_tracks
 
-# Insert tapcells and endcaps
-puts "\[INFO\] Inserting Tapcells and Endcaps..."
+puts "\[INFO\] Inserting tapcells and endcaps..."
 tapcell -distance 14 \
         -tapcell_master $TAP_CELL \
         -endcap_master $ENDCAP_CELL
 
-# Pin placement (Met3 horizontal, Met4 vertical)
-puts "\[INFO\] Placing I/O Pins..."
+puts "\[INFO\] Placing I/O pins..."
 place_pins -hor_layers met3 -ver_layers met4
 
-# Power Delivery Network (PDN) configuration
-puts "\[INFO\] Setting up Power Delivery Network..."
-
+puts "\[INFO\] Generating Power Delivery Network..."
 add_global_connection -net $VDD_NET -inst_pattern .* -pin_pattern ^VPWR$ -power
 add_global_connection -net $VDD_NET -inst_pattern .* -pin_pattern ^VPB$  -power
 add_global_connection -net $VDD_NET -inst_pattern .* -pin_pattern ^vccd1$ -power
@@ -62,11 +53,9 @@ add_pdn_stripe -grid stdcell_grid -layer met5 -width 1.6 -pitch 27.14 -offset 13
 add_pdn_connect -grid stdcell_grid -layers "met1 met4"
 add_pdn_connect -grid stdcell_grid -layers "met4 met5"
 
-puts "\[INFO\] Generating PDN..."
 pdngen
 
-# Write floorplan checkpoint
-puts "\[INFO\] Writing Floorplan DEF..."
+puts "\[INFO\] Writing floorplan DEF..."
 write_def results/01_floorplan.def
 
-puts "\[INFO\] Floorplan complete!"
+puts "\[INFO\] Floorplan stage complete."

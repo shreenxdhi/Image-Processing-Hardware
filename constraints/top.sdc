@@ -1,9 +1,9 @@
-# Timing constraints for Streaming Image Processing Accelerator (100 MHz, 10ns period)
+# Timing constraints for Streaming Image Processing Accelerator (33 MHz, 30 ns period)
 
 # Clock definition
 create_clock \
     -name clk \
-    -period 10.000 \
+    -period 30.000 \
     [get_ports clk]
 
 # Clock uncertainty and transition

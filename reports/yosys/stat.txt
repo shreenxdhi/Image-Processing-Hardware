@@ -1,0 +1,457 @@
+28. Printing statistics.
+
+=== $paramod$8974e4b3938d5d8a1532a7196da418175c0d54cf\pixel_stream ===
+
+   Number of wires:                230
+   Number of wire bits:            296
+   Number of public wires:          10
+   Number of public wire bits:      76
+   Number of ports:                  8
+   Number of port bits:             57
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                286
+     sky130_fd_sc_hd__a2111oi_0      1
+     sky130_fd_sc_hd__a211oi_1       4
+     sky130_fd_sc_hd__a21o_1         1
+     sky130_fd_sc_hd__a21oi_1       52
+     sky130_fd_sc_hd__a31oi_1        5
+     sky130_fd_sc_hd__a41o_1         1
+     sky130_fd_sc_hd__a41oi_1        1
+     sky130_fd_sc_hd__and2_0         6
+     sky130_fd_sc_hd__and3_1        13
+     sky130_fd_sc_hd__and4_1         4
+     sky130_fd_sc_hd__clkinv_1       5
+     sky130_fd_sc_hd__dfxtp_1       66
+     sky130_fd_sc_hd__lpflow_isobufsrc_1      4
+     sky130_fd_sc_hd__nand2_1       28
+     sky130_fd_sc_hd__nand3_1        4
+     sky130_fd_sc_hd__nand4_1        6
+     sky130_fd_sc_hd__nand4b_1       2
+     sky130_fd_sc_hd__nor2_1        19
+     sky130_fd_sc_hd__nor2b_1        2
+     sky130_fd_sc_hd__nor3_1        26
+     sky130_fd_sc_hd__nor3b_1        1
+     sky130_fd_sc_hd__nor4b_1        2
+     sky130_fd_sc_hd__o21a_1         2
+     sky130_fd_sc_hd__o21ai_0       22
+     sky130_fd_sc_hd__o311a_1        1
+     sky130_fd_sc_hd__o31ai_1        2
+     sky130_fd_sc_hd__o32a_1         1
+     sky130_fd_sc_hd__or4b_1         1
+     sky130_fd_sc_hd__xnor2_1        2
+     sky130_fd_sc_hd__xor2_1         2
+
+=== $paramod$932e476fa9631b3e355c4f9b8005a918a1310609\image_pipeline ===
+
+   Number of wires:                 20
+   Number of wire bits:            139
+   Number of public wires:          20
+   Number of public wire bits:     139
+   Number of ports:                  7
+   Number of port bits:             32
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  4
+     $paramod\threshold\THRESHOLD=s32'00000000000000000000000001100100      1
+     $paramod\window_3x3\IMG_WIDTH=s32'00000000000000000000001010000010      1
+     gradient_mag                    1
+     sobel_core                      1
+
+=== $paramod\line_buffer\IMG_WIDTH=s32'00000000000000000000001010000010 ===
+
+   Number of wires:               4611
+   Number of wire bits:           9175
+   Number of public wires:         651
+   Number of public wire bits:    5199
+   Number of ports:                  6
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               9132
+     sky130_fd_sc_hd__a211o_1        8
+     sky130_fd_sc_hd__a211oi_1      20
+     sky130_fd_sc_hd__a21boi_0       1
+     sky130_fd_sc_hd__a21o_1         4
+     sky130_fd_sc_hd__a21oi_1      161
+     sky130_fd_sc_hd__a221o_1       12
+     sky130_fd_sc_hd__a221oi_1      11
+     sky130_fd_sc_hd__a22o_1         1
+     sky130_fd_sc_hd__a22oi_1       12
+     sky130_fd_sc_hd__a2bb2oi_1      1
+     sky130_fd_sc_hd__a311o_1        2
+     sky130_fd_sc_hd__a311oi_1      15
+     sky130_fd_sc_hd__a31o_1         2
+     sky130_fd_sc_hd__a31oi_1       26
+     sky130_fd_sc_hd__a32o_1         4
+     sky130_fd_sc_hd__a32oi_1        4
+     sky130_fd_sc_hd__a41o_1         1
+     sky130_fd_sc_hd__and2_0        12
+     sky130_fd_sc_hd__and3_1         6
+     sky130_fd_sc_hd__and4b_1        1
+     sky130_fd_sc_hd__clkinv_1      24
+     sky130_fd_sc_hd__dfxtp_1       21
+     sky130_fd_sc_hd__edfxtp_1    5136
+     sky130_fd_sc_hd__lpflow_inputiso1p_1      9
+     sky130_fd_sc_hd__lpflow_isobufsrc_1     25
+     sky130_fd_sc_hd__mux2_1        13
+     sky130_fd_sc_hd__mux2i_1      163
+     sky130_fd_sc_hd__mux4_2      1256
+     sky130_fd_sc_hd__nand2_1      190
+     sky130_fd_sc_hd__nand2b_1      16
+     sky130_fd_sc_hd__nand3_1       28
+     sky130_fd_sc_hd__nand4_1        2
+     sky130_fd_sc_hd__nor2_1      1088
+     sky130_fd_sc_hd__nor3_1        40
+     sky130_fd_sc_hd__nor3b_1        2
+     sky130_fd_sc_hd__nor4_1         1
+     sky130_fd_sc_hd__o211a_1        5
+     sky130_fd_sc_hd__o211ai_1      28
+     sky130_fd_sc_hd__o21a_1        11
+     sky130_fd_sc_hd__o21ai_0      500
+     sky130_fd_sc_hd__o21bai_1       6
+     sky130_fd_sc_hd__o221a_1        2
+     sky130_fd_sc_hd__o221ai_1     107
+     sky130_fd_sc_hd__o22a_1         7
+     sky130_fd_sc_hd__o22ai_1      111
+     sky130_fd_sc_hd__o2bb2ai_1      7
+     sky130_fd_sc_hd__o311a_1        1
+     sky130_fd_sc_hd__o311ai_0       5
+     sky130_fd_sc_hd__o31a_1         1
+     sky130_fd_sc_hd__o31ai_1       14
+     sky130_fd_sc_hd__o32ai_1        4
+     sky130_fd_sc_hd__o41a_1         1
+     sky130_fd_sc_hd__o41ai_1        1
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__or4_1          2
+
+=== $paramod\threshold\THRESHOLD=s32'00000000000000000000000001100100 ===
+
+   Number of wires:                  6
+   Number of wire bits:             24
+   Number of public wires:           2
+   Number of public wire bits:      20
+   Number of ports:                  2
+   Number of port bits:             20
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     sky130_fd_sc_hd__nand3_1        1
+     sky130_fd_sc_hd__nor2_1         1
+     sky130_fd_sc_hd__nor3_1         1
+     sky130_fd_sc_hd__o21a_1         1
+     sky130_fd_sc_hd__o311ai_0       1
+
+=== $paramod\window_3x3\IMG_WIDTH=s32'00000000000000000000001010000010 ===
+
+   Number of wires:                199
+   Number of wire bits:            292
+   Number of public wires:          20
+   Number of public wire bits:     113
+   Number of ports:                 14
+   Number of port bits:             84
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                264
+     $paramod\line_buffer\IMG_WIDTH=s32'00000000000000000000001010000010      2
+     sky130_fd_sc_hd__a21o_1         1
+     sky130_fd_sc_hd__a21oi_1        4
+     sky130_fd_sc_hd__a311oi_1       1
+     sky130_fd_sc_hd__a31oi_1        1
+     sky130_fd_sc_hd__a41o_1         1
+     sky130_fd_sc_hd__and2_0         2
+     sky130_fd_sc_hd__and3_1         3
+     sky130_fd_sc_hd__and3b_1        1
+     sky130_fd_sc_hd__and4_1         2
+     sky130_fd_sc_hd__and4b_1        2
+     sky130_fd_sc_hd__dfxtp_1       83
+     sky130_fd_sc_hd__mux2i_1       72
+     sky130_fd_sc_hd__nand3_1        2
+     sky130_fd_sc_hd__nor2_1        77
+     sky130_fd_sc_hd__nor3_1         7
+     sky130_fd_sc_hd__nor4_1         1
+     sky130_fd_sc_hd__o21bai_1       2
+
+=== gradient_mag ===
+
+   Number of wires:                 80
+   Number of wire bits:            131
+   Number of public wires:           5
+   Number of public wire bits:      56
+   Number of ports:                  3
+   Number of port bits:             34
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 87
+     sky130_fd_sc_hd__a21oi_1        2
+     sky130_fd_sc_hd__a31oi_1        2
+     sky130_fd_sc_hd__and2_0         2
+     sky130_fd_sc_hd__and4_1         1
+     sky130_fd_sc_hd__clkinv_1       1
+     sky130_fd_sc_hd__lpflow_inputiso1p_1      3
+     sky130_fd_sc_hd__lpflow_isobufsrc_1      2
+     sky130_fd_sc_hd__maj3_1         5
+     sky130_fd_sc_hd__nand2_1       10
+     sky130_fd_sc_hd__nand2b_1       4
+     sky130_fd_sc_hd__nor2_1         4
+     sky130_fd_sc_hd__nor3b_1        1
+     sky130_fd_sc_hd__nor4_1         2
+     sky130_fd_sc_hd__o211ai_1       1
+     sky130_fd_sc_hd__o21a_1         3
+     sky130_fd_sc_hd__o21ai_0        4
+     sky130_fd_sc_hd__o22a_1         1
+     sky130_fd_sc_hd__o31ai_1        4
+     sky130_fd_sc_hd__or4_1          2
+     sky130_fd_sc_hd__xnor2_1       12
+     sky130_fd_sc_hd__xor2_1        21
+
+=== image_rom ===
+
+   Number of wires:              60767
+   Number of wire bits:          60798
+   Number of public wires:           3
+   Number of public wire bits:      27
+   Number of ports:                  3
+   Number of port bits:             27
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              60779
+     sky130_fd_sc_hd__a2111o_1      14
+     sky130_fd_sc_hd__a2111oi_0    460
+     sky130_fd_sc_hd__a211o_1      147
+     sky130_fd_sc_hd__a211oi_1    1445
+     sky130_fd_sc_hd__a21bo_1       18
+     sky130_fd_sc_hd__a21boi_0      56
+     sky130_fd_sc_hd__a21o_1       136
+     sky130_fd_sc_hd__a21oi_1     9151
+     sky130_fd_sc_hd__a221o_1      147
+     sky130_fd_sc_hd__a221oi_1    1421
+     sky130_fd_sc_hd__a222oi_1     118
+     sky130_fd_sc_hd__a22o_1        56
+     sky130_fd_sc_hd__a22oi_1      471
+     sky130_fd_sc_hd__a2bb2oi_1     67
+     sky130_fd_sc_hd__a311o_1       90
+     sky130_fd_sc_hd__a311oi_1     579
+     sky130_fd_sc_hd__a31o_1       183
+     sky130_fd_sc_hd__a31oi_1     5608
+     sky130_fd_sc_hd__a32o_1        83
+     sky130_fd_sc_hd__a32oi_1      466
+     sky130_fd_sc_hd__a41o_1       134
+     sky130_fd_sc_hd__a41oi_1     1344
+     sky130_fd_sc_hd__and2_0        39
+     sky130_fd_sc_hd__and3_1       146
+     sky130_fd_sc_hd__and3b_1       34
+     sky130_fd_sc_hd__and4_1        26
+     sky130_fd_sc_hd__and4b_1       22
+     sky130_fd_sc_hd__clkinv_1      23
+     sky130_fd_sc_hd__dfxtp_1        8
+     sky130_fd_sc_hd__lpflow_inputiso1p_1     33
+     sky130_fd_sc_hd__lpflow_isobufsrc_1     44
+     sky130_fd_sc_hd__maj3_1         1
+     sky130_fd_sc_hd__mux2_1         9
+     sky130_fd_sc_hd__mux2i_1       17
+     sky130_fd_sc_hd__nand2_1     6102
+     sky130_fd_sc_hd__nand2b_1      40
+     sky130_fd_sc_hd__nand3_1     2165
+     sky130_fd_sc_hd__nand3b_1      56
+     sky130_fd_sc_hd__nand4_1     1008
+     sky130_fd_sc_hd__nand4b_1      35
+     sky130_fd_sc_hd__nand4bb_1     21
+     sky130_fd_sc_hd__nor2_1      5392
+     sky130_fd_sc_hd__nor2b_1        4
+     sky130_fd_sc_hd__nor3_1      2441
+     sky130_fd_sc_hd__nor3b_1       51
+     sky130_fd_sc_hd__nor4_1      1170
+     sky130_fd_sc_hd__nor4b_1       32
+     sky130_fd_sc_hd__nor4bb_1      25
+     sky130_fd_sc_hd__o2111a_1       9
+     sky130_fd_sc_hd__o2111ai_1    462
+     sky130_fd_sc_hd__o211a_1       35
+     sky130_fd_sc_hd__o211ai_1    1487
+     sky130_fd_sc_hd__o21a_1       111
+     sky130_fd_sc_hd__o21ai_0     9132
+     sky130_fd_sc_hd__o21ba_1       14
+     sky130_fd_sc_hd__o21bai_1      36
+     sky130_fd_sc_hd__o221a_1       40
+     sky130_fd_sc_hd__o221ai_1    1262
+     sky130_fd_sc_hd__o22a_1        32
+     sky130_fd_sc_hd__o22ai_1     1745
+     sky130_fd_sc_hd__o2bb2ai_1     64
+     sky130_fd_sc_hd__o311a_1       90
+     sky130_fd_sc_hd__o311ai_0     576
+     sky130_fd_sc_hd__o31a_1       224
+     sky130_fd_sc_hd__o31ai_1     1844
+     sky130_fd_sc_hd__o32a_1        80
+     sky130_fd_sc_hd__o32ai_1      497
+     sky130_fd_sc_hd__o41a_1        27
+     sky130_fd_sc_hd__o41ai_1     1519
+     sky130_fd_sc_hd__or3_1        159
+     sky130_fd_sc_hd__or3b_1        33
+     sky130_fd_sc_hd__or4_1        126
+     sky130_fd_sc_hd__or4b_1        22
+     sky130_fd_sc_hd__xnor2_1        7
+     sky130_fd_sc_hd__xnor3_1        1
+     sky130_fd_sc_hd__xor2_1         6
+     sky130_fd_sc_hd__xor3_1         1
+
+=== sobel_core ===
+
+   Number of wires:                274
+   Number of wire bits:            357
+   Number of public wires:          11
+   Number of public wire bits:      94
+   Number of ports:                 11
+   Number of port bits:             94
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                285
+     sky130_fd_sc_hd__a211o_1        1
+     sky130_fd_sc_hd__a21o_1         4
+     sky130_fd_sc_hd__a21oi_1       11
+     sky130_fd_sc_hd__a31oi_1        1
+     sky130_fd_sc_hd__a32oi_1        1
+     sky130_fd_sc_hd__and2_0         6
+     sky130_fd_sc_hd__and3_1         1
+     sky130_fd_sc_hd__clkinv_1       5
+     sky130_fd_sc_hd__lpflow_inputiso1p_1      4
+     sky130_fd_sc_hd__lpflow_isobufsrc_1     12
+     sky130_fd_sc_hd__maj3_1        43
+     sky130_fd_sc_hd__nand2_1       19
+     sky130_fd_sc_hd__nand2b_1       7
+     sky130_fd_sc_hd__nand3_1        2
+     sky130_fd_sc_hd__nand4_1        1
+     sky130_fd_sc_hd__nor2_1        21
+     sky130_fd_sc_hd__nor3_1         1
+     sky130_fd_sc_hd__o21ai_0       10
+     sky130_fd_sc_hd__or3_1          1
+     sky130_fd_sc_hd__xnor2_1       62
+     sky130_fd_sc_hd__xnor3_1       16
+     sky130_fd_sc_hd__xor2_1        50
+     sky130_fd_sc_hd__xor3_1         6
+
+=== top ===
+
+   Number of wires:                 11
+   Number of wire bits:             78
+   Number of public wires:          11
+   Number of public wire bits:      78
+   Number of ports:                  5
+   Number of port bits:             23
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  3
+     $paramod$8974e4b3938d5d8a1532a7196da418175c0d54cf\pixel_stream      1
+     $paramod$932e476fa9631b3e355c4f9b8005a918a1310609\image_pipeline      1
+     image_rom                       1
+
+=== design hierarchy ===
+
+   top                               1
+     $paramod$8974e4b3938d5d8a1532a7196da418175c0d54cf\pixel_stream      1
+     $paramod$932e476fa9631b3e355c4f9b8005a918a1310609\image_pipeline      1
+       $paramod\threshold\THRESHOLD=s32'00000000000000000000000001100100      1
+       $paramod\window_3x3\IMG_WIDTH=s32'00000000000000000000001010000010      1
+         $paramod\line_buffer\IMG_WIDTH=s32'00000000000000000000001010000010      2
+       gradient_mag                  1
+       sobel_core                    1
+     image_rom                       1
+
+   Number of wires:              70809
+   Number of wire bits:          80465
+   Number of public wires:        1384
+   Number of public wire bits:   11001
+   Number of ports:                 65
+   Number of port bits:            411
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              79968
+     sky130_fd_sc_hd__a2111o_1      14
+     sky130_fd_sc_hd__a2111oi_0    461
+     sky130_fd_sc_hd__a211o_1      164
+     sky130_fd_sc_hd__a211oi_1    1489
+     sky130_fd_sc_hd__a21bo_1       18
+     sky130_fd_sc_hd__a21boi_0      58
+     sky130_fd_sc_hd__a21o_1       150
+     sky130_fd_sc_hd__a21oi_1     9542
+     sky130_fd_sc_hd__a221o_1      171
+     sky130_fd_sc_hd__a221oi_1    1443
+     sky130_fd_sc_hd__a222oi_1     118
+     sky130_fd_sc_hd__a22o_1        58
+     sky130_fd_sc_hd__a22oi_1      495
+     sky130_fd_sc_hd__a2bb2oi_1     69
+     sky130_fd_sc_hd__a311o_1       94
+     sky130_fd_sc_hd__a311oi_1     610
+     sky130_fd_sc_hd__a31o_1       187
+     sky130_fd_sc_hd__a31oi_1     5669
+     sky130_fd_sc_hd__a32o_1        91
+     sky130_fd_sc_hd__a32oi_1      475
+     sky130_fd_sc_hd__a41o_1       138
+     sky130_fd_sc_hd__a41oi_1     1345
+     sky130_fd_sc_hd__and2_0        79
+     sky130_fd_sc_hd__and3_1       175
+     sky130_fd_sc_hd__and3b_1       35
+     sky130_fd_sc_hd__and4_1        33
+     sky130_fd_sc_hd__and4b_1       26
+     sky130_fd_sc_hd__clkinv_1      82
+     sky130_fd_sc_hd__dfxtp_1      199
+     sky130_fd_sc_hd__edfxtp_1   10272
+     sky130_fd_sc_hd__lpflow_inputiso1p_1     58
+     sky130_fd_sc_hd__lpflow_isobufsrc_1    112
+     sky130_fd_sc_hd__maj3_1        49
+     sky130_fd_sc_hd__mux2_1        35
+     sky130_fd_sc_hd__mux2i_1      415
+     sky130_fd_sc_hd__mux4_2      2512
+     sky130_fd_sc_hd__nand2_1     6539
+     sky130_fd_sc_hd__nand2b_1      83
+     sky130_fd_sc_hd__nand3_1     2230
+     sky130_fd_sc_hd__nand3b_1      56
+     sky130_fd_sc_hd__nand4_1     1019
+     sky130_fd_sc_hd__nand4b_1      37
+     sky130_fd_sc_hd__nand4bb_1     21
+     sky130_fd_sc_hd__nor2_1      7690
+     sky130_fd_sc_hd__nor2b_1        6
+     sky130_fd_sc_hd__nor3_1      2556
+     sky130_fd_sc_hd__nor3b_1       57
+     sky130_fd_sc_hd__nor4_1      1175
+     sky130_fd_sc_hd__nor4b_1       34
+     sky130_fd_sc_hd__nor4bb_1      25
+     sky130_fd_sc_hd__o2111a_1       9
+     sky130_fd_sc_hd__o2111ai_1    462
+     sky130_fd_sc_hd__o211a_1       45
+     sky130_fd_sc_hd__o211ai_1    1544
+     sky130_fd_sc_hd__o21a_1       139
+     sky130_fd_sc_hd__o21ai_0    10168
+     sky130_fd_sc_hd__o21ba_1       14
+     sky130_fd_sc_hd__o21bai_1      50
+     sky130_fd_sc_hd__o221a_1       44
+     sky130_fd_sc_hd__o221ai_1    1476
+     sky130_fd_sc_hd__o22a_1        47
+     sky130_fd_sc_hd__o22ai_1     1967
+     sky130_fd_sc_hd__o2bb2ai_1     78
+     sky130_fd_sc_hd__o311a_1       93
+     sky130_fd_sc_hd__o311ai_0     587
+     sky130_fd_sc_hd__o31a_1       226
+     sky130_fd_sc_hd__o31ai_1     1878
+     sky130_fd_sc_hd__o32a_1        81
+     sky130_fd_sc_hd__o32ai_1      505
+     sky130_fd_sc_hd__o41a_1        29
+     sky130_fd_sc_hd__o41ai_1     1521
+     sky130_fd_sc_hd__or3_1        162
+     sky130_fd_sc_hd__or3b_1        33
+     sky130_fd_sc_hd__or4_1        132
+     sky130_fd_sc_hd__or4b_1        23
+     sky130_fd_sc_hd__xnor2_1       83
+     sky130_fd_sc_hd__xnor3_1       17
+     sky130_fd_sc_hd__xor2_1        79
+     sky130_fd_sc_hd__xor3_1         7
+

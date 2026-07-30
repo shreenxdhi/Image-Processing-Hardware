@@ -28,11 +28,6 @@ module tb_line_buffer;
     end
 
     initial begin
-        $dumpfile("line_buffer.vcd");
-        $dumpvars(0, tb_line_buffer);
-    end
-
-    initial begin
         rst         = 1'b1;
         pixel_valid = 1'b0;
         pixel_in    = '0;

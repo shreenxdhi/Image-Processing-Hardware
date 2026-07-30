@@ -1,14 +1,11 @@
-# PDK root path (override via env var PDK_ROOT or use default path)
 if { [info exists ::env(PDK_ROOT)] } {
-    set PDK_LIB "$::env(PDK_ROOT)/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+    set PDK_LIB "$::env(PDK_ROOT)/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
 } else {
     set PDK_LIB "$::env(HOME)/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
 }
 
-# Read target Liberty library
 read_liberty -lib $PDK_LIB
 
-# Read Verilog RTL source files
 read_verilog rtl/image_rom.v
 read_verilog rtl/pixel_stream.v
 read_verilog rtl/line_buffer.v
@@ -19,11 +16,9 @@ read_verilog rtl/threshold.v
 read_verilog rtl/image_pipeline.v
 read_verilog rtl/top.v
 
-# Check design hierarchy
 hierarchy -check -top top
 check
 
-# Perform RTL optimization passes
 proc
 opt_expr
 opt_clean
@@ -37,22 +32,16 @@ opt
 techmap
 opt
 
-# Map flip-flops to Sky130 HD DFFs
 dfflibmap -liberty $PDK_LIB
 
-# ABC logic optimization
 abc -liberty $PDK_LIB -D 10000
 
 clean
 
-# Export synthesis reports
 stat -liberty $PDK_LIB
 
-tee -o reports/yosys/stat.txt stat
-tee -o reports/yosys/check.txt check
+tee -o reports/yosys/stat.txt      stat
+tee -o reports/yosys/check.txt     check
 tee -o reports/yosys/hierarchy.txt hierarchy
 
-# Write gate-level netlists
 write_verilog -noattr netlist/top_sky130.v
-write_json netlist/top_sky130.json
-write_blif netlist/top_sky130.blif

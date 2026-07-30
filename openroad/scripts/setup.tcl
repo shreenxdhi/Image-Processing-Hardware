@@ -6,8 +6,15 @@ set NETLIST "../netlist/top_sky130.v"
 set SDC_FILE "../constraints/top.sdc"
 
 # PDK Paths (Sky130 HD)
-set PDK_ROOT "{path}/.ciel/ciel/sky130/versions/8afc8346a57fe1ab7934ba5a6056ea8b43078e71/sky130A"
-
+# Use PDK_ROOT env variable if set, otherwise auto-detect from ciel or volare
+if { [info exists ::env(PDK_ROOT)] } {
+    set PDK_ROOT $::env(PDK_ROOT)
+} elseif { [file isdirectory "/home/[exec whoami]/.ciel"] } {
+    set PDK_ROOT [exec bash -c {find ~/.ciel/ciel/sky130/versions -maxdepth 1 -mindepth 1 -type d 2>/dev/null | sort | tail -n1}]/sky130A
+} else {
+    set PDK_ROOT [exec bash -c {find ~/.volare/volare/sky130/versions -maxdepth 1 -mindepth 1 -type d 2>/dev/null | sort | tail -n1}]/sky130A
+}
+puts "\[INFO\] PDK_ROOT resolved to: $PDK_ROOT"
 
 set TECH_LEF "$PDK_ROOT/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef"
 set CELL_LEF "$PDK_ROOT/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef"
@@ -28,3 +35,5 @@ set ENDCAP_CELL "sky130_fd_sc_hd__decap_3"
 set DIODE_CELL "sky130_fd_sc_hd__diode_2"
 set FILLER_CELLS "sky130_fd_sc_hd__fill_1 sky130_fd_sc_hd__fill_2 sky130_fd_sc_hd__fill_4 sky130_fd_sc_hd__fill_8"
 
+# Multi-threading configuration (4 physical CPU cores available)
+set_thread_count 4
