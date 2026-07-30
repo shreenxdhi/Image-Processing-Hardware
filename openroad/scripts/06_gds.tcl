@@ -16,12 +16,11 @@ read_sdc $SDC_FILE
 puts "\[INFO\] Writing final signoff DEF..."
 write_def results/top_sky130.def
 
-puts "\[INFO\] Attempting GDS export..."
-set PDK_GDS "$PDK_ROOT/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds"
-if { [catch {write_gds -merge $PDK_GDS results/top_sky130.gds}] } {
-    puts "\[INFO\] write_gds not supported in this build; layout deliverable is results/top_sky130.def"
+puts "\[INFO\] Streaming out GDSII layout via KLayout..."
+if { [catch {exec klayout -zz -r scripts/export_gds.py} kl_err] } {
+    puts "\[INFO\] KLayout streamout notice: $kl_err"
 } else {
-    puts "\[INFO\] GDS layout generated: results/top_sky130.gds"
+    puts "\[INFO\] GDSII layout generated: results/top_sky130.gds"
 }
 
 puts "\[INFO\] Physical Design flow complete."

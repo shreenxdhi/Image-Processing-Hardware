@@ -25,6 +25,7 @@ reports/yosys.log
 netlist/*.blif
 netlist/*.json
 openroad/logs/
+openroad/pdk_files/
 openroad/results/01_floorplan.def
 openroad/results/02_place.def
 openroad/results/03_cts.def
